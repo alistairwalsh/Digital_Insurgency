@@ -6,7 +6,6 @@ st.image('images/Nisha_Nakamura.jpg')
 with open('text/Nisha_Nakamura.txt') as infile:
     st.write(infile.read())
 
-video_file = open('video\Nisha.mp4')
-video_bytes = video_file.read()
-
-st.video(video_bytes)
+with open('video\Nisha.mp4', 'rb') as infile:
+    video_bytes = infile.read()
+    st.video(video_bytes)
