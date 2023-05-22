@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as components
 
-components.iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSfs4yDOBtcmz2z3n9ameHrA04L2C5AEY1MiXiuWxE68cRcEEg/viewform?embedded=true" width="640" height="584")
+components.iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSfs4yDOBtcmz2z3n9ameHrA04L2C5AEY1MiXiuWxE68cRcEEg/viewform?embedded=true", width="640", height="584")
 
 
 #https://forms.gle/s5fk3z9qjECU8SMB7
