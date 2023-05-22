@@ -3,15 +3,16 @@ import streamlit as st
 
 st.write("currently not working - soon!")
 
-#adding a single-line text input widget
-
-all_comments = []
-
-def on_new():
-    all_comments.append(comment)
-    for c in all_comments:
-        st.write(c)
-
-
-comment = st.text_input(label='What do you think? ',on_change = on_new)
+wt = ['initialised text']
+with watchlist:
+    st.header('Watchlist')
+     #create 2 columns inside watchlist header
+    col1 = st.beta_columns()
+    with col1:
+        container1 = st.beta_container()
+        sym = container1.text_input('for adding')
+        add_button = container2.button('add')
+        if add_button:
+            wt.append(sym)
+st.write(wt)
 
