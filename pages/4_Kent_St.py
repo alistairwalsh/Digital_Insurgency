@@ -5,7 +5,7 @@ st.title('Kent St')
 
 st.image('images/kent_st.jpg')
 st.image('images/realistic_cyberpunk_fusion_blending_futuristic_el.jpg')
-components.iframe(src="https://renderstuff.com/tools/360-panorama-web-viewer-embed/?image=https://i.imgur.com/SdkOUAq.jpg", width=1200, height=700, scrolling="no")
+components.iframe(src="https://renderstuff.com/tools/360-panorama-web-viewer-embed/?image=https://i.imgur.com/SdkOUAq.jpg", width=1200, height=700)
 
 with open('text/the_scene.txt') as infile:
     st.write(infile.read())
