@@ -1,6 +1,6 @@
 import streamlit as st
 
-with st.form("my_form"):
+with st.form("my_form") as form:
    text_val = form.text_input("Comment")
    checkbox_val = st.checkbox("Would come back to see how this goes?")
 
