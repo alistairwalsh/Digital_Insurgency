@@ -3,6 +3,8 @@ import streamlit as st
 
 #adding a single-line text input widget
 
+all_comments = []
+
 def on_new():
     all_comments.append(comment)
     for c in all_comments:
