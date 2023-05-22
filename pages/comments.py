@@ -4,7 +4,7 @@ import pandas as pd
 
 
 with st.form("my_form"):
-   df = pd.read_csv('df.csv')
+   df = pd.read_csv('df.csv',index_col=False)
    text_val = st.text_input("Comment")
    checkbox_val = st.checkbox("Would come back to see how this goes?")
 
