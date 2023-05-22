@@ -28,4 +28,8 @@ with open('video/Lena, the bar_s resident DJ.mp4', 'rb') as infile:
     video_bytes = infile.read()
     st.video(video_bytes)
 
+with open('video/936fa529-0acd-412a-b5c2-8e1a9eb53888.mp4', 'rb') as infile:
+    video_bytes = infile.read()
+    st.video(video_bytes)
+
 
