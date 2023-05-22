@@ -1,28 +1,12 @@
 import streamlit as st
 import pandas as pd
+import streamlit.components.v1 as components
 
-df = pd.DataFrame()
+components.iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSfs4yDOBtcmz2z3n9ameHrA04L2C5AEY1MiXiuWxE68cRcEEg/viewform?embedded=true" width="640" height="584")
 
-with st.form("my_form"):
 
-       
-   
-    text_val = st.text_input("Comment")
-    checkbox_val = st.checkbox("Would come back to see how this goes?")
-
-   # Every form must have a submit button.
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-       st.write("comment:", text_val)
-       st.write("checkbox", checkbox_val)
-       d = {'comment': [text_val],
-            'would_return':[checkbox_val]}
-       st.markdown('Thank you for your feedback!')
-       df = pd.concat([df, pd.DataFrame(d)], ignore_index=True)
-       df.to_csv('df.csv', index=False)
-df = pd.read_csv('df.csv')
-st.dataframe(df)
-
+#https://forms.gle/s5fk3z9qjECU8SMB7
+#<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfs4yDOBtcmz2z3n9ameHrA04L2C5AEY1MiXiuWxE68cRcEEg/viewform?embedded=true" width="640" height="584" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 # import pandas as pd
 
@@ -34,3 +18,5 @@ st.dataframe(df)
 
 # # ok let's load the data
 # questions_df = load_data(st.secrets["public_gsheets_url"])
+
+# https://docs.google.com/spreadsheets/d/1z6JE4_lLDqZUq77cPhq80eybiL3ZpZ7ya7x0aX14ghQ/edit?usp=sharing
