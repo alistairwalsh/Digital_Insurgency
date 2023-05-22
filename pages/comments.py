@@ -7,7 +7,7 @@ st.write("currently not working - soon!")
 
 all_comments = []
 
-def on_new(comment):
+def on_new():
     all_comments.append(comment)
     for c in all_comments:
         st.write(c)
