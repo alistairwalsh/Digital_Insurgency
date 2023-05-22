@@ -23,6 +23,9 @@ with open('video/jackson_message.mp4', 'rb') as infile:
     video_bytes = infile.read()
     st.video(video_bytes)
 
+with open(text/jackson_chat.txt) as infile:
+    st.markdown(infile.read())
+
 st.title('Lena')
 st.image('images/Lena.jpg')
 with open('text/lena.txt') as infile:
