@@ -4,7 +4,7 @@ import pandas as pd
 
 
 with st.form("my_form"):
-   df = pd.DataFrame()
+   df = pd.read_csv('df.csv')
    text_val = st.text_input("Comment")
    checkbox_val = st.checkbox("Would come back to see how this goes?")
 
@@ -18,4 +18,6 @@ with st.form("my_form"):
        st.markdown('Thank you for your feedback!')
        df = pd.concat([df, pd.DataFrame(d)], ignore_index=True)
        open('df.csv', 'w').write(df.to_csv())
-       st.dataframe(df)
+
+df = pd.read_csv('df.csv')
+st.dataframe(df)
