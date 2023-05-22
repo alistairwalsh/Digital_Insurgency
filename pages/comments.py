@@ -11,4 +11,5 @@ comment = st.text_input('What do you think?: ', 'comment')
 
 #displaying the entered text
 
-st.write('Your name is ', name, 'Your comment is ', comment)
+st.write( name + ':')
+st.write(comment)
