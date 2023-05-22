@@ -23,7 +23,7 @@ with open('video/jackson_message.mp4', 'rb') as infile:
     video_bytes = infile.read()
     st.video(video_bytes)
 
-with open(text/jackson_chat.txt) as infile:
+with open('text/jackson_chat.txt') as infile:
     st.markdown(infile.read())
 
 st.title('Lena')
