@@ -9,5 +9,5 @@ def on_new():
         st.write(c)
 
 
-comment = st.text_input(label='What do you think?: ',on_change(on_new))
+comment = st.text_input(label='What do you think?: ',on_change = on_new)
 
