@@ -3,6 +3,7 @@ import streamlit as st
 st.title('Kent St')
 
 st.image('images/kent_st.jpg')
+st.image('images/realistic_cyberpunk_fusion_blending_futuristic_el.jpg')
 
 with open('text/the_scene.txt') as infile:
     st.write(infile.read())

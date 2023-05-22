@@ -6,6 +6,10 @@
 
 [leonardo.ai](https://leonardo.ai/)
 
+### 3D panorama from prompt
+
+[blockadelabs](https://skybox.blockadelabs.com/)
+
 ### Web tools
 
 [Streamlit.io](https://streamlit.io/)
