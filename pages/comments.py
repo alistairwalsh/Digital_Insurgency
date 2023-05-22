@@ -1,18 +1,8 @@
-
 import streamlit as st
-import SessionState
 
-wt = ['initialised text']
-ss = SessionState.get(wt=wt)
+form = st.form("my_form")
+form.slider("Inside the form")
+st.slider("Outside the form")
 
-st.header('Watchlist')
-
-container1 = st.beta_container()
-sym = container1.text_input('for adding')
-container2 = st.beta_container()
-add_button = container2.button('add')
-
-if add_button:
-    ss.wt.append(sym)
-
-st.write(ss.wt)
+# Now add a submit button to the form:
+form.form_submit_button("Submit")
