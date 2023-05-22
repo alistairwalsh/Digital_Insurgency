@@ -1,7 +1,11 @@
+### Text generation
+
+[chat-gpt](https://chat.openai.com/)
+
 ### Image generation
 
-[leonardo.ai] https://leonardo.ai/
+[leonardo.ai](https://leonardo.ai/)
 
 ### Web tools
 
-[Streamlit.io] https://streamlit.io/
+[Streamlit.io](https://streamlit.io/)
