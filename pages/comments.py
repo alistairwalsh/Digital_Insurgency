@@ -5,11 +5,11 @@ import streamlit as st
 
 all_comments = []
 
-def on_new():
+def on_new(comment):
     all_comments.append(comment)
     for c in all_comments:
         st.write(c)
 
 
-comment = st.text_input(label='What do you think? ',on_change = on_new, args = comment)
+comment = st.text_input(label='What do you think? ',on_change = on_new)
 
