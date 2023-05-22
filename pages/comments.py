@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.DataFrame()
+
 
 with st.form("my_form"):
+   df = pd.DataFrame()
    text_val = st.text_input("Comment")
    checkbox_val = st.checkbox("Would come back to see how this goes?")
 
@@ -17,5 +18,4 @@ with st.form("my_form"):
        st.markdown('Thank you for your feedback!')
        df = df.append(d, ignore_index = True)
        open('df.csv', 'w').write(df.to_csv())
-
-st.dataframe(df)
+       st.dataframe(df)
