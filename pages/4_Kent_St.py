@@ -19,6 +19,10 @@ st.image('images/Jackson.jpg')
 with open('text/Jackson.txt') as infile:
     st.write(infile.read())
 
+with open('video/jackson_message.mp4', 'rb') as infile:
+    video_bytes = infile.read()
+    st.video(video_bytes)
+
 st.title('Lena')
 st.image('images/Lena.jpg')
 with open('text/lena.txt') as infile:

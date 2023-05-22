@@ -6,6 +6,10 @@
 
 [leonardo.ai](https://leonardo.ai/)
 
+### Animated Avitars
+
+[Kubee](https://www.kubee.ai/)
+
 ### 3D panorama from prompt
 
 [blockadelabs](https://skybox.blockadelabs.com/)
