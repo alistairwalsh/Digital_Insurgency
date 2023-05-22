@@ -22,3 +22,15 @@ with st.form("my_form"):
        df.to_csv('df.csv', index=False)
 df = pd.read_csv('df.csv')
 st.dataframe(df)
+
+
+# import pandas as pd
+
+# @st.cache_data(ttl=600)
+# def load_data(sheets_url):
+#     csv_url = sheets_url.replace('/edit#gid=', '/export?format=csv&gid=')
+#     return pd.read_csv(csv_url)
+
+
+# # ok let's load the data
+# questions_df = load_data(st.secrets["public_gsheets_url"])

@@ -9,3 +9,7 @@
 ### Web tools
 
 [Streamlit.io](https://streamlit.io/)
+
+### Latest AI tools and news 
+
+[Futuretools.io](https://www.futuretools.io/)
