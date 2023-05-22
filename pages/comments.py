@@ -8,6 +8,4 @@ def main():
     with readme("streamlit-disqus", st_disqus, __file__):
         st_disqus("streamlit-disqus-demo")
 
-
-if __name__ == "__main__":
-    main()
+main()
