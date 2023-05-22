@@ -1,9 +1,10 @@
 import streamlit as st
 
-form = st.form("my_form")
-form.text_input("Comment")
+with st.form("my_form"):
+   text_val = form.text_input("Comment")
+   checkbox_val = st.checkbox("Would come back to see how this goes?")
 
-# Now add a submit button to the form:
-comment_form = form.form_submit_button("Submit")
-
-st.write(comment_form)
+   # Every form must have a submit button.
+   submitted = st.form_submit_button("Submit")
+   if submitted:
+       st.write("comment", text_val, "checkbox", checkbox_val)
