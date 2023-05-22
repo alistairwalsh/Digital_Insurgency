@@ -1,3 +1,2 @@
 streamlit
 streamlit-disqus
-streamlit_gallery
