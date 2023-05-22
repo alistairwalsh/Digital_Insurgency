@@ -16,6 +16,6 @@ with st.form("my_form"):
        d = {'comment': [text_val],
             'would_return':[checkbox_val]}
        st.markdown('Thank you for your feedback!')
-       df = pd.concat([df, pd.DataFrame(d), ignore_index=true])
+       df = pd.concat([df, pd.DataFrame(d)], ignore_index=true)
        open('df.csv', 'w').write(df.to_csv())
        st.dataframe(df)
