@@ -26,7 +26,7 @@ with open('video/jackson_message.mp4', 'rb') as infile:
 with open('text/jackson_chat.txt') as infile:
     st.markdown(infile.read())
 
-components.iframe(src='https://www.kubee.ai/chat?isChange=true&userId=1660580962428149760',  width=1200, height=2400)
+components.iframe(src='https://www.kubee.ai/chat?isChange=true&userId=1660580962428149760',  width=800, height=800)
 
 st.title('Lena')
 st.image('images/Lena.jpg')
