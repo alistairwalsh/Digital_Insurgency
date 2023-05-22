@@ -7,7 +7,7 @@ with st.form("my_form"):
     try:
        df = pd.read_csv('df.csv',index_col=False)
     except:
-       df = pd.Dataframe()
+       df = pd.DataFrame()
    
     text_val = st.text_input("Comment")
     checkbox_val = st.checkbox("Would come back to see how this goes?")
