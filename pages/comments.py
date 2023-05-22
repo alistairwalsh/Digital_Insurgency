@@ -1,9 +1,14 @@
-from streamlit_disqus import st_disqus
 
-st_disqus(shortname="streamlit-disqus-demo",
-    url='https://alistairwalsh-digital-insurgency-digital-insurgency-1d0lze.streamlit.app/comments',
-    identifier='comments',
-    title=None,
-    category_id=None,
-    language=None,
-    key=None)
+import streamlit as st
+
+#adding a single-line text input widget
+
+name = st.text_input('Enter your name: ', 'name')
+comment = st.text_input('What do you think?: ', 'comment')
+
+
+
+
+#displaying the entered text
+
+st.write('Your name is ', name, 'Your comment is ', comment)
