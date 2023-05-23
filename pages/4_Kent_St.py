@@ -6,6 +6,9 @@ st.title('Kent St')
 st.image('images/kent_st.jpg')
 components.iframe(src="https://renderstuff.com/tools/360-panorama-web-viewer-embed/?image=https://i.imgur.com/SdkOUAq.jpg", width=1200, height=700)
 components.iframe(src="https://renderstuff.com/tools/360-panorama-web-viewer-embed/?image=https://i.imgur.com/U4PIoQP.jpg", width=1200, height=700)
+
+components.iframe(src='https://genny.lovo.ai/share/dcfe90a1-fe8b-4a38-a588-b556a8a6e300')
+
 with open('text/the_scene.txt') as infile:
     st.write(infile.read())
 st.title('Max')
