@@ -9,7 +9,7 @@ components.iframe(src="https://renderstuff.com/tools/360-panorama-web-viewer-emb
 
 #components.iframe(src='https://genny.lovo.ai/share/1f9f085d-90ac-4324-9bcf-c6f621267b61', height=400) 
 #components.iframe(src='../2023-06-29_13-07-00.mp3', height=400)
-
+st.title('Narrator')
 st.audio('video/2023-06-29_13-07-00.mp3')
 
 with open('text/the_scene.txt') as infile:
