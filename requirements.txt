@@ -2,3 +2,6 @@ streamlit
 streamlit-disqus
 openai
 chainlit
+langchain
+duckduckgo-search
+anthropic
