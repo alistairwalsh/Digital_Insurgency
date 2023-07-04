@@ -1,3 +1,5 @@
+import streamlit as st
+
 tab1, tab2, tab3 = st.tabs(["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn"])
 
 with tab1:
