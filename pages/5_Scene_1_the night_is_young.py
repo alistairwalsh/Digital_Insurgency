@@ -19,7 +19,7 @@ st.write('Sitting at the bar is a young girl with captivating eyes, lost in thou
 
 st.image('images/PXL_20230702_065835869.PORTRAIT.jpg',width=3)
 
-st.write('Thankyou for letting me use your image, I was so focussed on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).')
+st.write("Thankyou for letting me use your image, I was so focussed on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
 
 
 
