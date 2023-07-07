@@ -43,3 +43,9 @@ with st.sidebar:
            "Nottingham Forest football team lifting the FA Cup"
         ), index=0)
     st.markdown('Use the above drop down box to generate _prompt_ examples')
+
+     # Create text prompt
+prompt = st.text_input('Input the prompt desired')
+ # Checks if the example prompts has been chosen and overides the text input
+if add_selectbox != 'None' or prompt is None:
+    prompt = add_selectbox
