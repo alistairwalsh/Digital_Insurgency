@@ -5,3 +5,4 @@ chainlit
 langchain
 duckduckgo-search
 anthropic
+stability-sdk
