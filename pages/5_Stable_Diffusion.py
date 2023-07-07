@@ -12,7 +12,7 @@ import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 # Sign up for an account at the following link to get an API Key.
 # https://dreamstudio.ai/
 
-'[Sign Up](https://www.example.com) to get an API Key'
+'[Sign Up](https://dreamstudio.ai/) to get an API Key'
 
 # Click on the following link once you have created an account to be taken to your API Key.
 # https://dreamstudio.ai/account
