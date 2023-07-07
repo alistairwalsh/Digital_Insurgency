@@ -6,3 +6,4 @@ langchain
 duckduckgo-search
 anthropic
 stability-sdk
+torchvision
