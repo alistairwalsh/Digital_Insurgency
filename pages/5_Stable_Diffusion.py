@@ -43,4 +43,3 @@ with st.sidebar:
            "Nottingham Forest football team lifting the FA Cup"
         ), index=0)
     st.markdown('Use the above drop down box to generate _prompt_ examples')
-    st.text('Application by Gary Hutson')
