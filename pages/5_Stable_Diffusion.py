@@ -52,7 +52,7 @@ if add_selectbox != 'None' or prompt is None:
 
 # Set up our connection to the API.
 stability_api = client.StabilityInference(
-    key=stability_api_key#os.environ['STABILITY_KEY'], # API Key reference.
+    key=stability_api_key,#os.environ['STABILITY_KEY'], # API Key reference.
     verbose=True, # Print debug messages.
     engine="stable-diffusion-xl-1024-v0-9", # Set the engine to use for generation.
     # Available engines: stable-diffusion-xl-1024-v0-9 stable-diffusion-v1 stable-diffusion-v1-5 stable-diffusion-512-v2-0 stable-diffusion-768-v2-0
