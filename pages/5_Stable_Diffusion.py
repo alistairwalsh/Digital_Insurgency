@@ -61,7 +61,7 @@ stability_api = client.StabilityInference(
 
 # Set up our initial generation parameters.
 answers = stability_api.generate(
-    prompt="expansive landscape rolling greens with blue daisies and yggdrasil under a blue alien sky, masterful, ghibli",
+    prompt,#="expansive landscape rolling greens with blue daisies and yggdrasil under a blue alien sky, masterful, ghibli",
     seed=992446758, # If a seed is provided, the resulting generated image will be deterministic.
                     # What this means is that as long as all generation parameters remain the same, you can always recall the same image simply by generating it again.
                     # Note: This isn't quite the case for CLIP Guided generations, which we tackle in the CLIP Guidance documentation.
