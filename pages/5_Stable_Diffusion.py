@@ -23,3 +23,6 @@ import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
 
 with st.sidebar:
     stability_api_key = st.text_input("Stability API Key", key="image_api_key", type="password")
+
+if stability_api_key:
+    st.text(stability_api_key)
