@@ -22,4 +22,13 @@ st.image('images/PXL_20230702_065835869.PORTRAIT.jpg',width=300)
 
 st.write("Thankyou for letting me use your image, I was so focussed on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
 
+st.title("Bitjammer")
+
+st.image('images/SDXL_09_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_sunlight_0.jpg')
+
+st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.' )
+
+st.image('images/PXL_20230716_050909165.jpg',width=300)
+
+
 components.iframe("https://memebrain-influx.hf.space")
