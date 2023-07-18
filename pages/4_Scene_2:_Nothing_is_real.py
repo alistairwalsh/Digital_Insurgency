@@ -6,7 +6,7 @@ st.image('images/Leonardo_Diffusion_realistic_photo_of_an_angel_with_dark_glass_
 
 with open('video/combined_bitjammer.mp4', 'rb') as infile:
     video_bytes = infile.read()
-    st.video(video_bytes,muted="true")
+    st.video(video_bytes)
 
 <video controls width="250" autoplay="true" muted="true" loop="true">
 <source 
