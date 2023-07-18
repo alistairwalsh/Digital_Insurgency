@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.title('The night is young')
 
@@ -21,9 +22,4 @@ st.image('images/PXL_20230702_065835869.PORTRAIT.jpg',width=300)
 
 st.write("Thankyou for letting me use your image, I was so focussed on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
 
-<iframe
-	src="https://memebrain-influx.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
+components.iframe("https://memebrain-influx.hf.space")
