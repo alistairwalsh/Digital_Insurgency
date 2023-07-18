@@ -11,4 +11,5 @@ with open('video/combined_bitjammer.mp4', 'rb') as infile:
 with open('text/scene_2.txt') as infile:
     st.write(infile.read())
 
-st.video('https://www.tiktok.com/@real_memebrain/video/7257153023456087297?is_from_webapp=1&sender_device=pc&web_id=7235988086685337089')
+with open('video/Nisha, adorned with cybernetic enhancements and a hardened gaze. stands in front of a grimy mirror. wearing nothing but her insecurities. She takes a (1689687422266).mp4') as infile:
+    st.write(infile.read())
