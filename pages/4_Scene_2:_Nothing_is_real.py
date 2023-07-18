@@ -11,6 +11,4 @@ with open('video/combined_bitjammer.mp4', 'rb') as infile:
 with open('text/scene_2.txt') as infile:
     st.write(infile.read())
 
-with open('video/Nisha_rap_video.mp4') as infile:
-    video_bytes = infile.read()
-    st.video(video_bytes)
+st.video('video/Nisha_rap_video.mp4')
