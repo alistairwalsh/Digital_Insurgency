@@ -3,6 +3,8 @@ import streamlit.components.v1 as components
 
 st.title('The night is young')
 
+st.video('https://youtu.be/LPhII-22bXo')
+
 st.image('images/Scene_1.jpg')
 
 with open('text/scene_1.txt') as infile:
