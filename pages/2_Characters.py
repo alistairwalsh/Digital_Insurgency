@@ -61,7 +61,8 @@ with tab5:
 
 with tab6:
     st.title('Adranos Forge')
-    st.image('images/SDXL_09_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_sunlight_0.jpg')
+    st.image('images/graybeard.png')
+    st.write("Beneath the surface, beyond the firm set of his jaw and the steely determination etched into his features, lay a heart forged in loyalty and camaraderie. A sentinel like no other, Adranos Forge was not just a guardian of gates and systems, but a steadfast friend to the hackers who walked the razor's edge between the real and the digital." )
 
 
 
