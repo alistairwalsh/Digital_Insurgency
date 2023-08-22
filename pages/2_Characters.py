@@ -1,6 +1,6 @@
 import streamlit as st
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss'])
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Adranos Forge'])
 
 with tab1:
     st.title('Nisha Nakamura')
@@ -58,6 +58,11 @@ with tab5:
 
     with open("text/Xavier Bitjammer Voss.txt") as infile:
         st.write(infile.read())
+
+with tab6:
+    st.title('Adranos Forge')
+    st.image('images/SDXL_09_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_sunlight_0.jpg')
+
 
 
 
