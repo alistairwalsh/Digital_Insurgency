@@ -8,6 +8,6 @@ st.image('images/tatiana3.png')
 with open('text/scene_3.txt') as infile:
     st.write(infile.read())
 
-
-
 st.video('https://youtu.be/kRtV9rHn-mo')
+
+st.image('images/tatiana4.png')
