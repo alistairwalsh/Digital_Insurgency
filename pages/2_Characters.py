@@ -71,5 +71,6 @@ with tab7:
     st.image('images/tatiana.png')
     with open("text/tatiana.txt") as infile:
         st.write(infile.read())
+    st.image('images/tatiana2.png')
              
 
