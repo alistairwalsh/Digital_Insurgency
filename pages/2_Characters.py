@@ -1,6 +1,6 @@
 import streamlit as st
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Adranos Forge'])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Adranos Forge', 'Tatiana'])
 
 with tab1:
     st.title('Nisha Nakamura')
@@ -66,5 +66,9 @@ with tab6:
     st.write("Beneath the surface, beyond the firm set of his jaw and the steely determination etched into his features, lay a heart forged in loyalty and camaraderie. A sentinel like no other, Adranos Forge was not just a guardian of gates and systems, but a steadfast friend to the hackers who walked the razor's edge between the real and the digital." )
 
 
-
+with tab7:
+    st.title('Tatiana')
+    with open("text/tatiana.txt") as infile:
+        st.write(infile.read())
+             
 
