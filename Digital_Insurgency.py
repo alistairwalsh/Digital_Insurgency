@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.title()
-
 st.header('Digital Insurgency', divider='black')
 st.header("Unleashing the System's Edge")
 st.image('images/Digital_Insurgency.jpg')
