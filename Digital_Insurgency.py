@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header('Digital Insurgency', divider='grey')
-st.header(st.markdown("### Unleashing the System's Edge"))
+st.markdown("### Unleashing the System's Edge")
 st.image('images/Digital_Insurgency.jpg')
 
 with open('text/the_world.txt') as infile:
