@@ -1,6 +1,6 @@
 import streamlit as st
 
-[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+[<img src="images/tiktok-logo-on-transparent-background-free-vector.jpg">](https://www.tiktok.com/@real_memebrain)
 
 st.header('Digital Insurgency', divider='grey')
 st.markdown("#### Unleashing the System's Edge")
