@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.title('Digital Insurgency')
+
 st.image('images/Digital_Insurgency.jpg')
 
 with open('text/title.txt') as infile:
