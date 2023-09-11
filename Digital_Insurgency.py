@@ -1,12 +1,10 @@
 import streamlit as st
 
-st.title('Digital Insurgency')
+st.title()
 
+st.header('Digital Insurgency', divider='black')
+st.header('_Streamlit_ is :blue[cool] :sunglasses:')
 st.image('images/Digital_Insurgency.jpg')
-
-with open('text/title.txt') as infile:
-    title_text = infile.read()
-    st.title(title_text)
 
 with open('text/the_world.txt') as infile:
     world_text = infile.read()
