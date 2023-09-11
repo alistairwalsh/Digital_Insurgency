@@ -1,5 +1,7 @@
 import streamlit as st
 
+[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+
 st.header('Digital Insurgency', divider='grey')
 st.markdown("#### Unleashing the System's Edge")
 st.image('images/Digital_Insurgency.jpg')
