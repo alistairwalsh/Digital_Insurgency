@@ -1,5 +1,8 @@
 import streamlit as st
 
+st.markdown('[![](images/tiktok-logo-on-transparent-background-free-vector.jpg)](https://www.tiktok.com/@real_memebrain)')
+st.markdown('[![](images/download (2).png)](https://www.youtube.com/channel/UCQv62qXnRifydR7BGksTjMQ)')
+
 #st.markdown(images/tiktok-logo-on-transparent-background-free-vector.jpg, https://www.tiktok.com/@real_memebrain)
 
 st.header('Digital Insurgency', divider='grey')
