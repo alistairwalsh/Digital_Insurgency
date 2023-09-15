@@ -2,6 +2,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 
+components.iframe('<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@real_memebrain" data-unique-id="real_memebrain" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@real_memebrain?refer=creator_embed">@real_memebrain</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>')
+
 
 st.components.v1.html('<a href="https://www.tiktok.com/@real_memebrain"><img src="images/tiktok-logo-on-transparent-background-free-vector.jpg"></a>')
 st.markdown("[![](images/tiktok-logo-on-transparent-background-free-vector.jpg)](https://www.tiktok.com/@real_memebrain)")
