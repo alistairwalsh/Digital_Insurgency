@@ -3,9 +3,13 @@ import streamlit as st
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown('[![](images/tiktok-logo-on-transparent-background-free-vector.jpg)](https://www.tiktok.com/@real_memebrain)')
+    #st.markdown('[![](images/tiktok-logo-on-transparent-background-free-vector.jpg)](https://www.tiktok.com/@real_memebrain)')
+    st.markdown('![](images/tiktok-logo-on-transparent-background-free-vector.jpg)')
+    
 with col2:
-    st.markdown('[![](images/download (2).png)](https://www.youtube.com/channel/UCQv62qXnRifydR7BGksTjMQ)')
+    #st.markdown('[![](images/download (2).png)](https://www.youtube.com/channel/UCQv62qXnRifydR7BGksTjMQ)')
+    st.markdown('![](images/download (2).png)')
+    
 
 #st.markdown(images/tiktok-logo-on-transparent-background-free-vector.jpg, https://www.tiktok.com/@real_memebrain)
 
