@@ -1,4 +1,7 @@
 import streamlit as st
+import streamlit.components.v1 as components
+
+
 
 st.markdown("[![](images/tiktok-logo-on-transparent-background-free-vector.jpg)](https://www.tiktok.com/@real_memebrain)")
 st.markdown("[![](images/youtube.png)](https://www.youtube.com/channel/UCQv62qXnRifydR7BGksTjMQ)")
