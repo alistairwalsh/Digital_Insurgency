@@ -8,7 +8,7 @@ with col1:
     
 with col2:
     #st.markdown('[![](images/download (2).png)](https://www.youtube.com/channel/UCQv62qXnRifydR7BGksTjMQ)')
-    st.markdown('![](images/download (2).png)')
+    st.markdown('![](images/youtube.png)')
     
 
 #st.markdown(images/tiktok-logo-on-transparent-background-free-vector.jpg, https://www.tiktok.com/@real_memebrain)
