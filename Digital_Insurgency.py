@@ -2,7 +2,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 
-components.iframe('<a href="https://www.tiktok.com/@real_memebrain"><img src="images/tiktok-logo-on-transparent-background-free-vector.jpg"></a>')
+
+st.components.v1.html('<a href="https://www.tiktok.com/@real_memebrain"><img src="images/tiktok-logo-on-transparent-background-free-vector.jpg"></a>')
 st.markdown("[![](images/tiktok-logo-on-transparent-background-free-vector.jpg)](https://www.tiktok.com/@real_memebrain)")
 st.markdown("[![](images/youtube.png)](https://www.youtube.com/channel/UCQv62qXnRifydR7BGksTjMQ)")
 
