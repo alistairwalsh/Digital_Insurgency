@@ -1,11 +1,30 @@
 import streamlit as st
+from utils import set_page_config, create_sidebar
 
-st.title('About this site')
+set_page_config()
+create_sidebar()
 
-st.write("I know I need to offer some explanation about what this is, and I'm working on it.")
-st.write("In case it hasn't been obvious to you up until now, this site is continuously changeing as it develops")
-st.write("I asked chat-gpt to create a world based on the writings of my favourite author - William Gibson")
-st.write("I didn't write any of the text or create any of the images or videos, that is the output of the AI models. My only input is to prompt and direct the AI")
-st.write(" I have a basic comments section going so there is a place for interaction with anyone who finds this")
-st.write("If you have some ideas or noticed something that you think could be better, leave a comment")
-st.write("next step is to put inplace some way for you to interact with the AI, it's called prompt engineering, where you describe what you want the AI to create")
+st.title('About Digital Insurgency')
+
+st.write("""
+This site is an evolving project that combines AI-generated content with interactive storytelling. Here's what you need to know:
+
+- The world and characters are inspired by the cyberpunk writings of William Gibson.
+- All text, images, and videos are AI-generated, prompted and directed by human input.
+- The site is continuously changing and developing as new content is created.
+- You can interact with the AI through the ChatGPT and Stable Diffusion pages.
+- We welcome your feedback and ideas in the comments section.
+
+Our next steps include expanding the interactive elements and refining the AI-generated content. Stay tuned for updates!
+
+If you enjoy this site and want to support its development, consider [buying us a coffee](https://ko-fi.com/memebrain).
+""")
+
+st.markdown("---")
+st.subheader("Technical Details")
+st.write("""
+- Built with Streamlit
+- Utilizes OpenAI's GPT models for text generation
+- Uses Stable Diffusion for image creation
+- Hosted on [platform name]
+""")
