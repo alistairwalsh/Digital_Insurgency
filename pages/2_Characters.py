@@ -39,9 +39,13 @@ for character in characters:
             sections = info.split("###")
             for section in sections:
                 if section.strip():
-                    title, content = section.split(":", 1)
-                    st.subheader(title.strip())
-                    st.write(content.strip())
+                    parts = section.split(":", 1)
+                    if len(parts) == 2:
+                        title, content = parts
+                        st.subheader(title.strip())
+                        st.write(content.strip())
+                    else:
+                        st.write(section.strip())
         
         if character == "Nisha Nakamura":
             st.video('video/Nisha.mp4')
