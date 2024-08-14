@@ -6,7 +6,12 @@ def load_character_info(name):
         with open(f'text/{name}.txt') as infile:
             return infile.read()
     except FileNotFoundError:
-        return "Character description not available."
+        # Try with spaces instead of underscores
+        try:
+            with open(f'text/{name.replace("_", " ")}.txt') as infile:
+                return infile.read()
+        except FileNotFoundError:
+            return "Character description not available."
 
 def load_video(path):
     try:
@@ -15,7 +20,12 @@ def load_video(path):
     except FileNotFoundError:
         return None
 
-characters = ["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Adranos Forge', 'Tatiana']
+characters = ["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Jackson', 'Max', 'Lena', 'Tatiana']
+
+def get_file_name(character):
+    if character == 'Xavier "Bitjammer" Voss':
+        return "Xavier Bitjammer Voss"
+    return character.replace(" ", "_")
 
 tabs = st.tabs(characters)
 
@@ -26,14 +36,14 @@ for tab, character in zip(tabs, characters):
         col1, col2 = st.columns([1, 2])
         
         with col1:
-            image_path = f'images/{character.replace(" ", "_")}.jpg'
+            image_path = f'images/{get_file_name(character)}.jpg'
             if os.path.exists(image_path):
                 st.image(image_path, use_column_width=True)
             else:
                 st.write("Character image not available.")
         
         with col2:
-            st.write(load_character_info(character.replace(" ", "_")))
+            st.write(load_character_info(get_file_name(character)))
         
         if character == "Nisha Nakamura":
             with st.expander("Watch Nisha's Videos"):
