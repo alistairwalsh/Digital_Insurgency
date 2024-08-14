@@ -21,17 +21,18 @@ import streamlit.components.v1 as components
     #st.markdown("[![](images/youtube.png)](https://www.youtube.com/channel/UCQv62qXnRifydR7BGksTjMQ)")
     
 
-#st.markdown(images/tiktok-logo-on-transparent-background-free-vector.jpg, https://www.tiktok.com/@real_memebrain)
+import streamlit as st
+from utils import set_page_config, create_sidebar, load_text
 
-st.header('Digital Insurgency', divider='grey')
+set_page_config()
+create_sidebar()
+
+st.title('Digital Insurgency')
 st.markdown("#### Unleashing the System's Edge")
 st.image('images/Digital_Insurgency.jpg')
 
-with open('text/the_world.txt') as infile:
-    world_text = infile.read()
-    st.write(world_text)
+st.header('The World', divider='grey')
+st.write(load_text('text/the_world.txt'))
 
-
-with open('text/storyline.txt') as infile:
-    storyline_text = infile.read()
-    st.write(storyline_text)
+st.header('Storyline', divider='grey')
+st.write(load_text('text/storyline.txt'))
