@@ -45,7 +45,13 @@ for tab, character in zip(tabs, characters):
                 st.write("Character image not available.")
         
         with col2:
-            st.write(load_character_info(get_file_name(character)))
+            info = load_character_info(get_file_name(character))
+            sections = info.split("###")
+            for section in sections:
+                if section.strip():
+                    title, content = section.split(":", 1)
+                    st.subheader(title.strip())
+                    st.write(content.strip())
         
         if character == "Nisha Nakamura":
             with st.expander("Watch Nisha's Videos"):
@@ -68,13 +74,6 @@ for tab, character in zip(tabs, characters):
             st.image('images/PXL_20230716_050909165.jpg', width=300)
             st.write("Once again, thank you for letting me use your image.")
 
-        if character == "Adranos Forge":
-            st.image('images/graybeard.png')
-            st.write("Beneath the surface, beyond the firm set of his jaw and the steely determination etched into his features, lay a heart forged in loyalty and camaraderie. A sentinel like no other, Adranos Forge was not just a guardian of gates and systems, but a steadfast friend to the hackers who walked the razor's edge between the real and the digital.")
-            st.image('images/00016-3669535562.png')
-
-        if character == "Tatiana":
-            st.image('images/tatiana2.png')
 
         if st.button(f"Learn more about {character}"):
             st.write("Here you can add more detailed information or interactions.")
