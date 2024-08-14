@@ -1,8 +1,6 @@
 import streamlit as st
 import os
 
-st.warning("This app requires JavaScript to run properly. Please enable JavaScript in your browser settings if you're experiencing issues.")
-
 def load_character_info(name):
     try:
         with open(f'text/{name}.txt') as infile:
