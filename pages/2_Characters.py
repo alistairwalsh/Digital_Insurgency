@@ -1,38 +1,30 @@
 import streamlit as st
 import os
+from utils import set_page_config, create_sidebar, load_text
+
+set_page_config()
+create_sidebar()
+
+st.title('Characters')
 
 def load_character_info(name):
     try:
-        with open(f'text/{name}.txt') as infile:
-            return infile.read()
+        return load_text(f'text/{name}.txt')
     except FileNotFoundError:
-        # Try with spaces instead of underscores
         try:
-            with open(f'text/{name.replace("_", " ")}.txt') as infile:
-                return infile.read()
+            return load_text(f'text/{name.replace("_", " ")}.txt')
         except FileNotFoundError:
             return "Character description not available."
-
-def load_video(path):
-    try:
-        with open(path, 'rb') as infile:
-            return infile.read()
-    except FileNotFoundError:
-        return None
-
-characters = ["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Jackson', 'Max', 'Lena', 'Tatiana']
 
 def get_file_name(character):
     if character == 'Xavier "Bitjammer" Voss':
         return "Xavier Bitjammer Voss"
     return character.replace(" ", "_")
 
-tabs = st.tabs(characters)
+characters = ["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Jackson', 'Max', 'Lena', 'Tatiana']
 
-for tab, character in zip(tabs, characters):
-    with tab:
-        st.title(character)
-        
+for character in characters:
+    with st.expander(character):
         col1, col2 = st.columns([1, 2])
         
         with col1:
@@ -52,13 +44,8 @@ for tab, character in zip(tabs, characters):
                     st.write(content.strip())
         
         if character == "Nisha Nakamura":
-            with st.expander("Watch Nisha's Videos"):
-                video1 = load_video('video/Nisha.mp4')
-                if video1:
-                    st.video(video1)
-                video2 = load_video('video/87a2237a-4b3f-4775-9e0d-7655c0c0b273.mp4')
-                if video2:
-                    st.video(video2)
+            st.video('video/Nisha.mp4')
+            st.video('video/87a2237a-4b3f-4775-9e0d-7655c0c0b273.mp4')
 
         if character == "Amelia Rivers":
             st.image('images/DreamShaper_v5_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_di_0 (3).jpg')
@@ -71,9 +58,4 @@ for tab, character in zip(tabs, characters):
             st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.')
             st.image('images/PXL_20230716_050909165.jpg', width=300)
             st.write("Once again, thank you for letting me use your image.")
-
-
-        if st.button(f"Learn more about {character}"):
-            st.write("Here you can add more detailed information or interactions.")
-             
 
