@@ -9,10 +9,10 @@ st.title('Characters')
 
 def load_character_info(name):
     try:
-        return load_text(f'text/{name}.txt')
+        return load_text(f'text/character_descriptions/{name}.txt')
     except FileNotFoundError:
         try:
-            return load_text(f'text/{name.replace("_", " ")}.txt')
+            return load_text(f'text/character_descriptions/{name.replace("_", " ")}.txt')
         except FileNotFoundError:
             return "Character description not available."
 
@@ -28,7 +28,7 @@ for character in characters:
         col1, col2 = st.columns([1, 2])
         
         with col1:
-            image_path = f'images/{get_file_name(character)}.jpg'
+            image_path = f'images/character_headshots/{get_file_name(character)}.jpg'
             if os.path.exists(image_path):
                 st.image(image_path, use_column_width=True)
             else:
