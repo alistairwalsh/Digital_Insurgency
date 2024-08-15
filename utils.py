@@ -24,10 +24,13 @@ def create_sidebar():
             "About": "10_about",
             "Comments": "10_comments"
         }
-        
+    
         for page_name, page_file in pages.items():
             if st.button(page_name):
-                st.switch_page(f"pages/{page_file}.py")
+                if page_name == "Home":
+                    st.switch_page("Digital_Insurgency.py")
+                else:
+                    st.switch_page(f"pages/{page_file}.py")
 
 def load_text(file_path):
     with open(file_path, 'r') as file:

@@ -18,14 +18,28 @@ st.write(load_text('text/the_scene.txt'))
 
 for character in ['Max', 'Jackson', 'Lena']:
     st.header(character)
-    st.image(f'images/{character}.jpg')
-    st.write(load_text(f'text/{character}.txt'))
+    image_path = f'images/{character}.jpg'
+    if os.path.exists(image_path):
+        st.image(image_path)
+    else:
+        st.write(f"Image for {character} not found.")
+
+    try:
+        st.write(load_text(f'text/{character.lower()}.txt'))
+    except FileNotFoundError:
+        st.write(f"Description for {character} not available.")
     
     if character == 'Jackson':
-        st.video('video/jackson_message.mp4')
+        if os.path.exists('video/jackson_message.mp4'):
+            st.video('video/jackson_message.mp4')
+        else:
+            st.write("Video for Jackson not found.")
     elif character == 'Lena':
-        st.video('video/Lena, the bar_s resident DJ.mp4')
-        st.video('video/936fa529-0acd-412a-b5c2-8e1a9eb53888.mp4')
+        for video_file in ['video/Lena, the bar_s resident DJ.mp4', 'video/936fa529-0acd-412a-b5c2-8e1a9eb53888.mp4']:
+            if os.path.exists(video_file):
+                st.video(video_file)
+            else:
+                st.write(f"Video {video_file} for Lena not found.")
 
 components.iframe(src='https://www.kubee.ai/chat?isChange=true&userId=1660580962428149760', width=800, height=800)
 
