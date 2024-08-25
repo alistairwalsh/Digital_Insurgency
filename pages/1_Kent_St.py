@@ -1,9 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from utils import set_page_config, create_sidebar, load_text
-
-set_page_config()
-create_sidebar()
+import os
+from utils import load_text
 
 st.title('Kent St')
 
@@ -42,5 +40,3 @@ for character in ['Max', 'Jackson', 'Lena']:
                 st.write(f"Video {video_file} for Lena not found.")
 
 components.iframe(src='https://www.kubee.ai/chat?isChange=true&userId=1660580962428149760', width=800, height=800)
-
-
