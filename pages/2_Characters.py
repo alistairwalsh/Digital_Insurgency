@@ -8,17 +8,13 @@ def load_character_info(name):
     try:
         return load_text(f'text/character_descriptions/{name}.txt')
     except FileNotFoundError:
-        try:
-            return load_text(f'text/character_descriptions/{name.replace("_", " ")}.txt')
-        except FileNotFoundError:
-            return "Character description not available."
+        return "Character description not available."
+            
 
 def get_file_name(character):
-    if character == 'Xavier "Bitjammer" Voss':
-        return "Xavier Bitjammer Voss"
     return character.replace(" ", "_")
 
-characters = ["Nisha Nakamura", "Ren Hayashi", "Gabriel Thorn", "Amelia Rivers", 'Xavier "Bitjammer" Voss', 'Jackson', 'Max', 'Lena', 'Tatiana']
+characters = ["Nisha_Nakamura", "Ren_Hayashi", "Gabriel_Thorn", "Amelia_Rivers", 'Xavier_Bitjammer_Voss', 'Jackson', 'Max', 'Lena', 'Tatiana']
 
 for character in characters:
     with st.expander(character):
