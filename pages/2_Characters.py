@@ -1,9 +1,6 @@
 import streamlit as st
 import os
-from utils import set_page_config, create_sidebar, load_text
-
-set_page_config()
-create_sidebar()
+from utils import load_text
 
 st.title('Characters')
 
@@ -62,4 +59,3 @@ for character in characters:
             st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.')
             st.image('images/PXL_20230716_050909165.jpg', width=300)
             st.write("Once again, thank you for letting me use your image.")
-
