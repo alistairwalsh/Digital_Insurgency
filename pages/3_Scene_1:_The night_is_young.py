@@ -30,7 +30,7 @@ st.title("Bitjammer")
 
 st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.' )
 
-st.image('images/PXL_20230716_050909165.jpg',width=300)
+#st.image('images/PXL_20230716_050909165.jpg',width=300)
 
 
 components.iframe("https://memebrain-influx.hf.space")
