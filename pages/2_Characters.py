@@ -52,7 +52,6 @@ for character in characters:
             st.write("Thank you for letting me use your image. I was so focused on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
 
         if character == 'Xavier_Bitjammer_Voss':
-            st.image('images/character_headshots/bitjammer.jpg')
             st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.')
             st.image('images/character_headshots/bitjammer_2.jpg', width=300)
             st.image('images/character_headshots/bitjammer_original.jpg', width=300)
