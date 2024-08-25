@@ -26,7 +26,7 @@ st.write("Thankyou for letting me use your image, I was so focussed on what I wa
 
 st.title("Bitjammer")
 
-st.image('images/SDXL_09_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_sunlight_0.jpg')
+#st.image('images/SDXL_09_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_sunlight_0.jpg')
 
 st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.' )
 
