@@ -1,9 +1,9 @@
-Name: Xavier Bitjammer Voss
+### Name: Xavier Bitjammer Voss
 
-Background:
+### Background:
 Bitjammer, a tech-savvy individual with a knack for capturing and manipulating digital imagery, stands as the gatekeeper of Kent St's entrance. Born into the depths of a sprawling megacity, Bitjammer emerged from the shadows of underground hacking collectives, his journey interwoven with the clandestine realms of augmented realities and encrypted networks. With a name whispered among the elite circles of cybernetic artists, Bitjammer honed his skills as a visual illusionist and became the master of his own reality.
 
-Appearance:
+### Appearance:
 Bitjammer's appearance is a fusion of cybernetic enhancements and urban style. Wearing a sleek, form-fitting ensemble that melds technology with fashion, he embodies the essence of a digital chameleon. His AI image rig, mounted prominently on his chest, boasts an array of lenses, sensors, and processing units, enabling him to capture stunning images of the patrons while simultaneously manipulating and augmenting their visual representation. Neon-hued cybernetic tattoos snake across his exposed skin, pulsating with the rhythm of hidden algorithms and hidden messages.
 
 Personality:
