@@ -8,7 +8,7 @@ def load_character_info(name):
     try:
         return load_text(f'text/character_descriptions/{name}.txt')
     except FileNotFoundError:
-        return "Character description not available."
+        return "Character description is not available."
             
 
 def get_file_name(character):
