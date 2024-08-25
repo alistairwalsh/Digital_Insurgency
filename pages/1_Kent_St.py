@@ -39,4 +39,4 @@ for character in ['Max', 'Jackson', 'Lena']:
             else:
                 st.write(f"Video {video_file} for Lena not found.")
 
-components.iframe(src='https://www.kubee.ai/chat?isChange=true&userId=1660580962428149760', width=800, height=800)
+#components.iframe(src='https://www.kubee.ai/chat?isChange=true&userId=1660580962428149760', width=800, height=800)
