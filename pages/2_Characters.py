@@ -40,11 +40,11 @@ for character in characters:
                     else:
                         st.write(section.strip())
         
-        if character == "Nisha Nakamura":
+        if character == "Nisha_Nakamura":
             st.video('video/Nisha.mp4')
             st.video('video/87a2237a-4b3f-4775-9e0d-7655c0c0b273.mp4')
 
-        if character == "Amelia Rivers":
+        if character == "Amelia_Rivers":
             st.image('images/character_headshots/amelia_4.jpg')
             st.write('Sitting at the bar is a young girl with captivating eyes, lost in thought.')
             st.image('images/character_headshots/amelia_original.jpg', width=300)
@@ -52,7 +52,7 @@ for character in characters:
             st.image('images/character_headshots/amelia_2.jpg', width=300)
             st.write("Thank you for letting me use your image. I was so focused on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
 
-        if character == 'Xavier "Bitjammer" Voss':
+        if character == 'Xavier_Bitjammer_Voss':
             st.image('images/character_headshots/bitjammer.jpg')
             st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.')
             st.image('images/character_headshots/bitjammer_2.jpg', width=300)
