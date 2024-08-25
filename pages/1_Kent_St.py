@@ -16,7 +16,7 @@ st.write(load_text('text/the_scene.txt'))
 
 for character in ['Max', 'Jackson', 'Lena']:
     st.header(character)
-    image_path = f'images/{character}.jpg'
+    image_path = f'images/character_headshots/{character}.jpg'
     if os.path.exists(image_path):
         st.image(image_path)
     else:
