@@ -58,6 +58,6 @@ for character in characters:
             st.write("Once again, thank you for letting me use your image.")
 
         if character == 'Tatiana':
-            #st.image('images/character_headshots/Tatiana2.png')
-            st.image('images/character_headshots/Tatiana3.png')
-            st.image('images/character_headshots/Tatiana4.png')
+            st.image('images/character_headshots/Tatiana.jpg')
+            st.image('images/character_headshots/Tatiana3.jpg')
+            st.image('images/character_headshots/Tatiana4.jpg')
