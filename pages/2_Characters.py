@@ -49,7 +49,7 @@ for character in characters:
             st.video('video/87a2237a-4b3f-4775-9e0d-7655c0c0b273.mp4')
 
         if character == "Amelia Rivers":
-            st.image('images/DreamShaper_v5_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_di_0 (3).jpg')
+            st.image('images/character_headshots/amelia_4.jpg')
             st.write('Sitting at the bar is a young girl with captivating eyes, lost in thought.')
             st.image('images/PXL_20230702_065835869.PORTRAIT.jpg', width=300)
             st.write("Thank you for letting me use your image. I was so focused on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
