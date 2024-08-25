@@ -18,17 +18,17 @@ with open('video/Scene Setting_ Kent Street Dive Bar, bathed in dim neon lights,
 #st.image('images/DreamShaper_v5_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_di_1 (2).jpg')
 #st.image('images/DreamShaper_v5_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_di_0 (3).jpg')
 
-st.write('Sitting at the bar is a young girl with captivating eyes, lost in thought.' )
+#st.write('Sitting at the bar is a young girl with captivating eyes, lost in thought.' )
 
 #st.image('images/PXL_20230702_065835869.PORTRAIT.jpg',width=300)
 
-st.write("Thankyou for letting me use your image, I was so focussed on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
+#st.write("Thankyou for letting me use your image, I was so focussed on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
 
-st.title("Bitjammer")
+#st.title("Bitjammer")
 
 #st.image('images/SDXL_09_Scene_Setting_Kent_Street_Dive_Bar_bathed_in_sunlight_0.jpg')
 
-st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.' )
+#st.write('Bitjammer sits at the entrance, he is wearing his AI image rig mounted to his chest to capture images of the patrons.' )
 
 #st.image('images/PXL_20230716_050909165.jpg',width=300)
 
