@@ -51,7 +51,7 @@ for character in characters:
         if character == "Amelia Rivers":
             st.image('images/character_headshots/amelia_4.jpg')
             st.write('Sitting at the bar is a young girl with captivating eyes, lost in thought.')
-            st.image('images/PXL_20230702_065835869.PORTRAIT.jpg', width=300)
+            st.image('images/character_headshots/amelia_original.jpg', width=300)
             st.write("Thank you for letting me use your image. I was so focused on what I was doing I forgot to get your name - say hi in the comments and I'll add your name to the character. :-).")
 
         if character == 'Xavier "Bitjammer" Voss':
