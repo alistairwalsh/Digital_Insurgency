@@ -14,8 +14,10 @@ SAVE_DIR = "generated_images"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 def generate_image(prompt):
-    response = requests.post(API_URL, json={"prompt": prompt})
-    if response.status_code == 200:
+    try:
+        response = requests.post(API_URL, json={"prompt": prompt}, timeout=10)
+        response.raise_for_status()  # Raises an HTTPError for bad responses
+        
         timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
         filename = f"output-{timestamp}.png"
         image = Image.open(io.BytesIO(response.content))
@@ -30,10 +32,9 @@ def generate_image(prompt):
         with open(prompt_path, 'w') as f:
             json.dump({"prompt": prompt}, f)
         
-        return image, filename
-    else:
-        st.error(f"Error: Response with status code {response.status_code} - {response.text}")
-        return None, None
+        return image, filename, "success"
+    except requests.exceptions.RequestException as e:
+        return None, None, f"Error: {str(e)}"
 
 st.title("AI Image Generation")
 
@@ -44,8 +45,8 @@ prompt = st.text_input("Enter your image prompt:")
 if st.button("Generate Image"):
     if prompt:
         with st.spinner("Generating image..."):
-            image, filename = generate_image(prompt)
-            if image:
+            image, filename, status = generate_image(prompt)
+            if status == "success":
                 st.image(image, caption="Generated Image")
                 st.success(f"Image generated successfully and saved as {filename}!")
                 
@@ -58,9 +59,20 @@ if st.button("Generate Image"):
                     file_name=filename,
                     mime="image/png"
                 )
+            else:
+                st.error(f"Failed to generate image. {status}")
     else:
         st.warning("Please enter a prompt before generating an image.")
 
-st.write("Note: Make sure your Flux server is running at the specified API_URL before generating images.")
-st.write("Generated images are saved in the 'generated_images' folder along with their prompts.")
+# Server status indicator
+try:
+    response = requests.get(API_URL, timeout=5)
+    if response.status_code == 200:
+        st.success("✅ Image generation server is online and responding.")
+    else:
+        st.warning(f"⚠️ Image generation server is online but returned status code {response.status_code}.")
+except requests.exceptions.RequestException:
+    st.error("❌ Image generation server is offline or not responding.")
+
+st.write("Note: Generated images are saved in the 'generated_images' folder along with their prompts.")
 st.write("You can view all generated images and their prompts in the Image Gallery page.")
