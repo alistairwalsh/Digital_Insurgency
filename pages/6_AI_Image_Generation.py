@@ -6,8 +6,8 @@ import io
 import os
 import json
 
-# Keep the existing API_URL
-API_URL = "https://8000-01j6bh3pme1z7gksvmvndnpv69.cloudspaces.litng.ai/predict"
+# Update the API_URL to use port 8000
+API_URL = "https://8000-01j6bh3pme1z7gksvmvndnpv69.cloudspaces.litng.ai:8000/predict"
 
 # Create a directory to save generated images
 SAVE_DIR = "generated_images"
@@ -66,7 +66,7 @@ if st.button("Generate Image"):
 
 # Server status indicator
 try:
-    response = requests.get(API_URL, timeout=5)
+    response = requests.get(API_URL.replace("/predict", ""), timeout=5)
     if response.status_code == 200:
         st.success("✅ Image generation server is online and responding.")
     else:
