@@ -6,8 +6,8 @@ import io
 import os
 import json
 
-# Update the API_URL to use port 8000
-API_URL = "https://8000-01j6bh3pme1z7gksvmvndnpv69.cloudspaces.litng.ai:8000/predict"
+# Use the original API_URL without adding the port
+API_URL = "https://8000-01j6bh3pme1z7gksvmvndnpv69.cloudspaces.litng.ai/predict"
 
 # Create a directory to save generated images
 SAVE_DIR = "generated_images"
