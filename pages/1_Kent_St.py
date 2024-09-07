@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import os
 from utils import load_text
+st.write("If you're awake you're making art - Prince")
 
 st.title('Kent St')
 
